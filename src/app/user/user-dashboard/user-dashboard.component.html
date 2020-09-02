@@ -1,0 +1,48 @@
+<div style="margin:20px">
+    <div class="row" style="min-height: 400px;">
+        <div class="col-md-3">
+            <!-- sidebar -->
+            <img src="assets/img/VFI_logo.svg" alt="admin" class="img-thumbnail rounded mx-auto d-block" />
+            <hr />
+            <a class="btn btn-block" style="background-color: #f58000; color:#ffffff" href="./dashboard">Dashboard</a>
+            <a class="btn btn-block" style="background-color: #f58000; color:#ffffff" href="./mytasks">My Tasks</a>
+            <a class="btn btn-block" style="background-color: #f58000; color:#ffffff" href="./myprojects">My Projects</a>
+            <hr />
+
+            <hr />
+            <a class="btn btn-block btn-danger" href="./user-logout">Logout</a>
+
+        </div>
+<div class="col-md-9">
+        <h1 class="text-center">Project Status</h1>
+        <br/>
+        <div class="row" style="min-height: 400px;">   
+        <div class="col-md-4">
+            <div class="list-group">
+                <button type="button" class="list-group-item list-group-item-action text-center" style="background-color:#7041af; color:#ffffff">
+                    To Do
+                </button>
+                <button *ngFor="let todotask of toDoTasks" type="button" class="list-group-item list-group-item-action">{{todotask}}</button>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="list-group">
+                <button type="button" class="list-group-item list-group-item-action text-center" style="background-color:#7041af; color:#ffffff">
+                    In Progress
+                </button>
+                <button *ngFor="let inproctask of inprocTasks" type="button" class="list-group-item list-group-item-action">{{inproctask}}</button>
+
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="list-group">
+                <button type="button" class="list-group-item list-group-item-action text-center" style="background-color:#7041af; color:#ffffff">
+                    Completed
+                </button>
+                <button *ngFor="let compltTask of compltTasks" type="button" class="list-group-item list-group-item-action">{{compltTask}}</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>

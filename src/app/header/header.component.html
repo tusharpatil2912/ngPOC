@@ -1,0 +1,31 @@
+<nav class="navbar sticky-top navbar-light" style="background-color: #f58000">
+    <a class="navbar-brand h1" style="color: #ffffff" href="">Project Tracker</a>
+    <div *ngIf="router.url === '/userlogin'||router.url === '/register'" class="nav-right">
+        <div class="nav-list">
+            <a routerLink="userlogin"><button class="btn btn-success" style="margin-right : 10px">
+                    Login
+            </button>
+            </a>
+            <a routerLink="register"><button class="btn btn-danger" style="margin-right : 19px">
+                    Register
+            </button>
+            </a>
+        </div>
+    </div>
+    <div *ngIf="router.url === '/dashboard'" class="nav-right">
+        <div class="nav-list">
+            <a routerLink="dashboard"><button class="btn btn-outline-light" style="margin-right : 10px">
+                    Dashboard
+            </button>
+            </a>
+            <a routerLink="myprofile"><button class="btn btn-outline-light" style="margin-right : 10px">
+                    My Profile
+            </button>
+            </a>
+            <a routerLink="notifications"><button class="btn btn-outline-light" style="margin-right : 10px">
+                    Notifications
+            </button>
+            </a>
+        </div>
+    </div>
+</nav>
