@@ -4,27 +4,47 @@
         <div class="nav-list">
             <a routerLink="userlogin"><button class="btn btn-success" style="margin-right : 10px">
                     Login
-            </button>
+                </button>
             </a>
             <a routerLink="register"><button class="btn btn-danger" style="margin-right : 19px">
                     Register
-            </button>
+                </button>
             </a>
         </div>
     </div>
-    <div *ngIf="router.url === '/dashboard'" class="nav-right">
+    <div *ngIf="router.url === '/user/dashboard'" class="nav-right">
         <div class="nav-list">
-            <a routerLink="dashboard"><button class="btn btn-outline-light" style="margin-right : 10px">
+            <a routerLink="user/dashboard"><button class="btn btn-outline-light" style="margin-right : 10px">
                     Dashboard
-            </button>
+                </button>
             </a>
             <a routerLink="myprofile"><button class="btn btn-outline-light" style="margin-right : 10px">
                     My Profile
-            </button>
+                </button>
             </a>
             <a routerLink="notifications"><button class="btn btn-outline-light" style="margin-right : 10px">
                     Notifications
-            </button>
+                </button>
+            </a>
+        </div>
+    </div>
+    <div *ngIf="router.url === '/teamlead/dashboard'" class="nav-right">
+        <div class="nav-list">
+            <a routerLink="teamlead/projects"><button class="btn btn-outline-light" style="margin-right : 10px">
+                    Projects
+                </button>
+            </a>
+            <a routerLink="teamlead/dashboard"><button class="btn btn-outline-light" style="margin-right : 10px">
+                    Dashboard
+                </button>
+            </a>
+            <a routerLink="teamlead/teams"><button class="btn btn-outline-light" style="margin-right : 10px">
+                    Teams
+                </button>
+            </a>
+            <a routerLink="myprofile"><button class="btn btn-outline-light" style="margin-right : 10px">
+                    My Profile
+                </button>
             </a>
         </div>
     </div>
